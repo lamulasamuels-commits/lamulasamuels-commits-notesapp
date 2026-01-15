@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>AppForge App</title>
+    <style>
+        body { font-family: sans-serif; background: #1e1e1e; color: #fff; padding: 20px; }
+        #output { background: #000; padding: 10px; border-radius: 5px; font-family: monospace; }
+    </style>
+</head>
+<body>
+    <h1>AppForge Generated App</h1>
+    <div id="app"></div>
+    <script>
+        // Injected AI Script
+        try {
+            // package.json
+{
+  "name": "appforge-notes",
+  "version": "1.0.0",
+  "description": "AppForge Notes - Simple Electron Notes App",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^31.0.0"
+  }
+}
+
+        } catch (e) {
+            document.body.innerHTML += '<div style="color:red">Runtime Error: ' + e.message + '</div>';
+        }
+    </script>
+</body>
+</html>
